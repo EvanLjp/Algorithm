@@ -1,5 +1,6 @@
 package GetOffers;
 
+import GetOffers.some_used_class.ListNode;
 import org.junit.Test;
 
 import java.util.ArrayList;

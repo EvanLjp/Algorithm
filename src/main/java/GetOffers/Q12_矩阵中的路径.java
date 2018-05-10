@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Created by asus on 2018/4/8.
  */
-public class 矩阵中的路径 {
+public class Q12_矩阵中的路径 {
     private int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
     private char[] str;
     private int rows, cols;
