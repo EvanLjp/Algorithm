@@ -1,6 +1,6 @@
 package com.evan.leetcode.LeetCodeQuestions;
 
-import LEETCODE.StackAndQueue.TreeNode;
+import com.evan.leetcode.LEETCODE.StackAndQueue.TreeNode;
 import org.junit.Test;
 
 /**

@@ -1,7 +1,7 @@
 package com.evan.leetcode.LEETCODE.ALL;
 
-import LEETCODE.LINK.ListNode;
-import LEETCODE.LINK.TestHelper;
+import com.evan.leetcode.LEETCODE.LINK.ListNode;
+import com.evan.leetcode.LEETCODE.LINK.TestHelper;
 import org.junit.Test;
 
 /**

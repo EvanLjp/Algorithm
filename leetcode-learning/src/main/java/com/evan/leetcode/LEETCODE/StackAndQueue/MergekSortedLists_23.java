@@ -1,6 +1,7 @@
 package com.evan.leetcode.LEETCODE.StackAndQueue;
 
-import LEETCODE.LINK.ListNode;
+
+import com.evan.leetcode.LEETCODE.LINK.ListNode;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

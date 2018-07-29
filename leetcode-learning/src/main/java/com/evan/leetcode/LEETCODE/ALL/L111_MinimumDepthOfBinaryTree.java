@@ -1,6 +1,7 @@
 package com.evan.leetcode.LEETCODE.ALL;
 
-import LEETCODE.StackAndQueue.TreeNode;
+
+import com.evan.leetcode.LEETCODE.StackAndQueue.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

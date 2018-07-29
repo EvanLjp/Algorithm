@@ -1,6 +1,7 @@
 package com.evan.interviews;
 
-import GetOffers.some_used_class.TreeNode;
+
+import com.evan.interviews.some_used_class.TreeNode;
 
 /**
  * @Auther: Evan

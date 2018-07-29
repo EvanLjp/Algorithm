@@ -1,6 +1,7 @@
 package com.evan.leetcode.LeetCodeQuestions;
 
-import LEETCODE.TreeAndRecursion.TreeNode;
+
+import com.evan.leetcode.LEETCODE.TreeAndRecursion.TreeNode;
 
 /**
  * @Auther:Evan

@@ -1,6 +1,6 @@
 package com.evan.HeuAlgorithmCourse.report2;
 
-import HeuAlgorithmCourse.report1.TestHelper;
+import com.evan.HeuAlgorithmCourse.report1.TestHelper;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 package com.evan.interviews;
 
-import GetOffers.some_used_class.TreeNode;
+import com.evan.interviews.some_used_class.TreeNode;
 import org.junit.Test;
 
 import java.util.HashMap;

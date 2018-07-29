@@ -1,6 +1,7 @@
 package com.evan.interviews;
 
-import GetOffers.some_used_class.RandomListNode;
+
+import com.evan.interviews.some_used_class.RandomListNode;
 
 import java.util.HashMap;
 

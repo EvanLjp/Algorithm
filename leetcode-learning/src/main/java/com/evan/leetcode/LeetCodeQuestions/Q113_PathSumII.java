@@ -1,6 +1,7 @@
 package com.evan.leetcode.LeetCodeQuestions;
 
-import LEETCODE.StackAndQueue.TreeNode;
+
+import com.evan.leetcode.LEETCODE.StackAndQueue.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

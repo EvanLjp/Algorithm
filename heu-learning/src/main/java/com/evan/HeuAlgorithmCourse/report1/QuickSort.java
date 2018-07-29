@@ -3,7 +3,8 @@ package com.evan.HeuAlgorithmCourse.report1;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import static HeuAlgorithmCourse.report1.TestHelper.swap;
+import static com.evan.HeuAlgorithmCourse.report1.TestHelper.swap;
+
 
 /**
  * Created by asus on 2017/11/29.

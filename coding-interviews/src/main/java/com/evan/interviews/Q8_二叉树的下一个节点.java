@@ -1,6 +1,7 @@
 package com.evan.interviews;
 
-import GetOffers.some_used_class.TreeLinkNode;
+
+import com.evan.interviews.some_used_class.TreeLinkNode;
 
 /**
  * Created by asus on 2018/3/25.
