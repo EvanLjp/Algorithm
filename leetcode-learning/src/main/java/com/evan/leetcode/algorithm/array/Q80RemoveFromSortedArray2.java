@@ -1,9 +1,12 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.algorithm.array.annotations.DoublePointer;
+
 /**
  * @author :evan
  * @date :2018-07-29 11:24
  **/
+@DoublePointer
 public class Q80RemoveFromSortedArray2 {
 
     public int removeDuplicates(int[] nums) {

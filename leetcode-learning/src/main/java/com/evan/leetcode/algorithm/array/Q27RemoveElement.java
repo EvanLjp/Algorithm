@@ -1,9 +1,12 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.algorithm.array.annotations.DoublePointer;
+
 /**
  * @author :evan
  * @date :2018-07-29 10:55
  **/
+@DoublePointer
 public class Q27RemoveElement {
     public int removeElement(int[] nums, int val) {
         if (nums == null || nums.length == 0) {

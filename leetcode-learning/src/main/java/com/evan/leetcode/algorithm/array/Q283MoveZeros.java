@@ -1,9 +1,12 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.algorithm.array.annotations.DoublePointer;
+
 /**
  * @author : evan
  * @date : 2018-07-29 10:23
  **/
+@DoublePointer
 public class Q283MoveZeros {
     public void moveZeroes(int[] nums) {
         if (nums == null || nums.length == 0) {

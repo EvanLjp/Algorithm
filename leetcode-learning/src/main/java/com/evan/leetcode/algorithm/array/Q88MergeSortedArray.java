@@ -1,11 +1,13 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.algorithm.array.annotations.ReverseThinking;
 import org.junit.Test;
 
 /**
  * @author :evan
  * @date :2018-07-29 15:24
  **/
+@ReverseThinking
 public class Q88MergeSortedArray {
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {

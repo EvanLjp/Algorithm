@@ -1,5 +1,6 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.algorithm.array.annotations.QuickSort;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -8,6 +9,7 @@ import java.util.Arrays;
  * @author :evan
  * @date :2018-07-29 14:46
  **/
+@QuickSort
 public class Q75SortColors {
     public void sortColors(int[] nums) {
         //[0,zero]

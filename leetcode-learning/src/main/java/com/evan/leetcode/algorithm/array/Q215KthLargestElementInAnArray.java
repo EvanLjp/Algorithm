@@ -1,9 +1,12 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.algorithm.array.annotations.QuickSort;
+
 /**
  * @author :evan
  * @date :2018-07-29 16:00
  **/
+@QuickSort
 public class Q215KthLargestElementInAnArray {
     public int findKthLargest(int[] nums, int k) {
         return findK(nums,nums.length-k , 0, nums.length - 1);
