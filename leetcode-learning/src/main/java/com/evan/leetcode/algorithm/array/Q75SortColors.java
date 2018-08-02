@@ -1,5 +1,6 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.algorithm.array.annotations.CollisionPointer;
 import com.evan.leetcode.algorithm.array.annotations.QuickSort;
 import org.junit.Test;
 
@@ -10,6 +11,7 @@ import java.util.Arrays;
  * @date :2018-07-29 14:46
  **/
 @QuickSort
+@CollisionPointer
 public class Q75SortColors {
     public void sortColors(int[] nums) {
         //[0,zero]

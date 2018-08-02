@@ -1,5 +1,6 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.algorithm.array.annotations.CollisionPointer;
 import com.evan.leetcode.algorithm.array.annotations.QuickSort;
 
 /**
@@ -7,6 +8,7 @@ import com.evan.leetcode.algorithm.array.annotations.QuickSort;
  * @date :2018-07-29 16:00
  **/
 @QuickSort
+@CollisionPointer
 public class Q215KthLargestElementInAnArray {
     public int findKthLargest(int[] nums, int k) {
         return findK(nums,nums.length-k , 0, nums.length - 1);
@@ -36,8 +38,8 @@ public class Q215KthLargestElementInAnArray {
 
     public int partation(int[] nums, int left, int right) {
         //[left,small],[small+1,large-1],[large,right]
-        int mid = left+(right-left)/2;
-        swap(nums,left,mid);
+        int random = (int) (Math.random() * (right - left + 1) + left);
+        swap(nums,left,random);
         int flag=nums[left];
         int i=left+1;
         int j=right;
@@ -48,12 +50,10 @@ public class Q215KthLargestElementInAnArray {
             while (j>=left+1&&nums[j]>flag){
                 j--;
             }
-            if(i>j){
+            if(i>=j){
                 break;
             }
-            swap(nums,i,j);
-            i++;
-            j--;
+            swap(nums,i++,j--);
         }
         swap(nums,left,j);
         return j;
