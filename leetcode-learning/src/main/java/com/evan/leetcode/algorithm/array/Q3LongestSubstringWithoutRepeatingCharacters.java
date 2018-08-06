@@ -1,11 +1,13 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.algorithm.array.annotations.SlidingWindow;
 import org.junit.Test;
 
 /**
  * @author jiapeng.liu
  * @date 2018/8/3 9:27
  **/
+@SlidingWindow
 public class Q3LongestSubstringWithoutRepeatingCharacters {
     public int lengthOfLongestSubstring(String s) {
         int []freq=new int[256];
