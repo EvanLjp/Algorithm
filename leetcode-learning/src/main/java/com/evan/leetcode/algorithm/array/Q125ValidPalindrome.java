@@ -1,11 +1,13 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.algorithm.array.annotations.CollisionPointer;
 import org.junit.Test;
 
 /**
  * @author jiapeng.liu
  * @date 2018/8/2 9:36
  **/
+@CollisionPointer
 public class Q125ValidPalindrome {
     public boolean isPalindrome(String s) {
         s = s.toLowerCase();

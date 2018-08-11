@@ -13,8 +13,6 @@ public class Q344ReverseString {
         char[] chars = s.toCharArray();
         while (left < right) {
             swap(chars, left++, right--);
-
-
         }
         return new String(chars);
     }

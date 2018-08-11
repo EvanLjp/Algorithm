@@ -9,6 +9,7 @@ import org.junit.Test;
  **/
 @SlidingWindow
 public class Q3LongestSubstringWithoutRepeatingCharacters {
+
     public int lengthOfLongestSubstring(String s) {
         int []freq=new int[256];
         //[l,r]

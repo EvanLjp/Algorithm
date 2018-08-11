@@ -22,7 +22,7 @@ public class Q438FindAllAnagramsinaString {
         List<Integer> res = new ArrayList<>();
         int count = p.length();
         char[] chars = s.toCharArray();
-        while (right<s.length()) {
+        while (right < s.length()) {
             if (map[chars[right++]]-- > 0) {
                 count--;
             }
@@ -33,16 +33,15 @@ public class Q438FindAllAnagramsinaString {
                 if (map[chars[left++]]++ >= 0) {
                     count++;
                 }
-
             }
         }
         return res;
     }
 
     @Test
-    public void test(){
-        String a="cbaebabacd";
-        String b="abc";
+    public void test() {
+        String a = "cbaebabacd";
+        String b = "abc";
         List<Integer> list = findAnagrams(a, b);
         System.out.println(list);
     }
