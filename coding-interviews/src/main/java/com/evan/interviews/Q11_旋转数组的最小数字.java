@@ -31,23 +31,29 @@ public class Q11_旋转数组的最小数字 {
      * @return
      */
     public int minNumberInRotateArray_2(int[] array) {
-        if (array == null || array.length == 0) throw new IllegalArgumentException("无法找到最小元素");
+        if (array == null || array.length == 0) {
+            throw new IllegalArgumentException("无法找到最小元素");
+        }
         int left = 0, right = array.length - 1;
         while (array[left] >= array[right]) {
-            if (right - left == 1) break;
-            int mid = left + (right - left) / 2;
+            if (right - left == 1) {
+                break;
+            }
+            int mid = left + (right - left) >> 1;
             if (array[left] == array[mid] && array[mid] == array[right]) {
-                return searchMIN(array,left,right);
-            } else if (array[mid] >= array[left])
+                return searchMIN(array, left, right);
+            } else if (array[mid] >= array[left]) {
                 left = mid;
-            else right = mid;
+            } else {
+                right = mid;
+            }
         }
         return array[right];
     }
 
-    private int searchMIN(int[] array ,int left,int right) {
+    private int searchMIN(int[] array, int left, int right) {
         int target = array[left];
-        for (int i = left+1; i <=right; i++) {
+        for (int i = left + 1; i <= right; i++) {
             if (array[i] < array[i - 1]) {
                 target = array[i];
                 break;

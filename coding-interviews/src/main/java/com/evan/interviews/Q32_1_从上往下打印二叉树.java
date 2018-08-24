@@ -16,7 +16,9 @@ public class Q32_1_从上往下打印二叉树 {
     public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
         ArrayList<Integer> list=new ArrayList<>();
         Queue<TreeNode> queue=new LinkedList<>();
-        if(root==null) return list;
+        if(root==null) {
+            return list;
+        }
         queue.add(root);
         while (!queue.isEmpty()){
             int size=queue.size();

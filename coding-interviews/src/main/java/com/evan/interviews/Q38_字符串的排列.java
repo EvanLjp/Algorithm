@@ -1,5 +1,7 @@
 package com.evan.interviews;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -38,5 +40,9 @@ public class Q38_字符串的排列 {
 
     }
 
+    @Test
+    public void test(){
+        System.out.println(Permutation("aa"));
+    }
 
 }

@@ -7,7 +7,9 @@ package com.evan.interviews;
  */
 public class Q10_3_变态跳台阶 {
     public int JumpFloorII(int target) {
-        if(target<=2) return target;
+        if(target<=2) {
+            return target;
+        }
         int[]arr=new int[target+1];
         arr[1]=1;
         arr[2]=2;

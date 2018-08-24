@@ -1,5 +1,7 @@
 package com.evan.interviews;
 
+import org.junit.Test;
+
 /**
  * @Auther: Evan
  * @Description:
@@ -16,5 +18,9 @@ public class Q43_整数中1出现的次数 {
 
     }
 
+    @Test
+    public void test(){
+        System.out.println(NumberOf1Between1AndN_Solution(1));
+    }
 
 }

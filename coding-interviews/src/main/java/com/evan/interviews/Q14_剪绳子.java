@@ -8,7 +8,9 @@ package com.evan.interviews;
  */
 public class Q14_剪绳子 {
     public int integerBreak(int n) {
-        if(n<=3) return n-1;
+        if(n<=3) {
+            return n-1;
+        }
         int[]arr=new int[n+1];
         arr[1]=1;
         arr[2]=2;

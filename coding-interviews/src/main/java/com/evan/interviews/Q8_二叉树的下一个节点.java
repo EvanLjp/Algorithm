@@ -9,20 +9,20 @@ import com.evan.interviews.some_used_class.TreeLinkNode;
 public class Q8_二叉树的下一个节点 {
 
     public TreeLinkNode GetNext(TreeLinkNode pNode) {
-        TreeLinkNode cur=null;
-        if(pNode.right!=null){
-             cur=pNode.right;
-            while (cur.left!=null){
-                cur=cur.left;
+        TreeLinkNode cur = null;
+        if (pNode.right != null) {
+            cur = pNode.right;
+            while (cur.left != null) {
+                cur = cur.left;
             }
             return cur;
-        }else{
-            while (pNode.next!=null){
+        } else {
+            while (pNode.next != null) {
                 TreeLinkNode parent = pNode.next;
-                if(parent.left==pNode){
+                if (parent.left == pNode) {
                     return parent;
                 }
-                pNode=pNode.next;
+                pNode = pNode.next;
             }
             return null;
         }
