@@ -1,6 +1,7 @@
 package com.evan.leetcode.algorithm.stack_queue;
 
 
+import com.evan.leetcode.LEETCODE.LINK.ListNode;
 import com.evan.leetcode.algorithm.stack_queue.classes.TreeNode;
 import org.junit.Test;
 
@@ -13,6 +14,7 @@ import java.util.Stack;
  */
 public class Q94BinaryTreeInorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
+
         Stack<TreeNode> stack = new Stack<TreeNode>();
         ArrayList<Integer> result = new ArrayList<Integer>();
         TreeNode cur = root;

@@ -13,6 +13,7 @@
         <module>coding-interviews</module>
         <module>heu-learning</module>
         <module>interviews</module>
+        <module>design-pattern</module>
     </modules>
     <dependencies>
         <dependency>

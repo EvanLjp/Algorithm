@@ -1,5 +1,6 @@
 package com.evan.leetcode.algorithm.array;
 
+import com.evan.leetcode.LEETCODE.LINK.ListNode;
 import com.evan.leetcode.algorithm.array.annotations.SlidingWindow;
 import org.junit.Test;
 
@@ -13,6 +14,7 @@ import java.util.List;
 @SlidingWindow
 public class Q438FindAllAnagramsinaString {
     public List<Integer> findAnagrams(String s, String p) {
+
         int[] map = new int[256];
         for (char c : p.toCharArray()) {
             map[c]++;
@@ -36,6 +38,7 @@ public class Q438FindAllAnagramsinaString {
             }
         }
         return res;
+
     }
 
     @Test

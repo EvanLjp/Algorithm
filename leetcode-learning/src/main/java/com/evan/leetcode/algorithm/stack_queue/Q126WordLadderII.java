@@ -8,8 +8,6 @@ import java.util.*;
  **/
 public class Q126WordLadderII {
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
-        /* if (wordList)*/
-
         return null;
     }
 

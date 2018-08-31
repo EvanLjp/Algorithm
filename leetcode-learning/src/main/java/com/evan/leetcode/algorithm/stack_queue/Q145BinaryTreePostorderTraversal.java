@@ -19,7 +19,7 @@ public class Q145BinaryTreePostorderTraversal {
                 cur = cur.left;
             }
             cur = stack.peek();
-            if (cur.left != null && cur.right != pre) {
+            if (cur.right != null && cur.right != pre) {
                 cur = cur.right;
             } else {
                 cur = stack.pop();

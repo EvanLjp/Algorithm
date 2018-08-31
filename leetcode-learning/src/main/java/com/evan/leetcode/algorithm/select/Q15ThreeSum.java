@@ -14,7 +14,9 @@ public class Q15ThreeSum {
         if (nums == null || nums.length < 3) {
             return res;
         }
+        //nlogn
         Arrays.sort(nums);
+        //n^2
         for (int i = 0; i < nums.length - 2; i++) {
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;

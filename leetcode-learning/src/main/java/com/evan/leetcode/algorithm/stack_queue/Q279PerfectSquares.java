@@ -1,6 +1,5 @@
 package com.evan.leetcode.algorithm.stack_queue;
 
-import org.junit.Test;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -10,9 +9,9 @@ import java.util.Queue;
  * @date :2018-08-16 10:39
  **/
 public class Q279PerfectSquares {
-    class Pair {
-        private int times;
-        private int num;
+    private class Pair {
+        final int times;
+        final int num;
 
         public Pair(int times, int num) {
             this.times = times;
@@ -21,34 +20,28 @@ public class Q279PerfectSquares {
     }
 
     public int numSquares(int n) {
-        Queue<Pair> queue = new LinkedList<>();
-        queue.offer(new Pair(0, n));
+        Pair pair = new Pair(0, n);
         boolean[] visited = new boolean[n + 1];
         visited[n] = true;
+        Queue<Pair> queue = new LinkedList<>();
+        queue.offer(pair);
         while (!queue.isEmpty()) {
-            Pair pair = queue.poll();
-            int times = pair.times;
-            int num = pair.num;
+            Pair poll = queue.poll();
+
             for (int i = 1; ; i++) {
-                int a = num - i * i;
-                if (a < 0) {
+                int temp = poll.num - i * i;
+                if (temp < 0) {
                     break;
                 }
-                if (a == 0) {
-                    return times + 1;
+                if (temp == 0) {
+                    return poll.times + 1;
                 }
-                if (!visited[a]) {
-                    queue.offer(new Pair(times+1, a));
-                    visited[a] = true;
+                if (!visited[temp]) {
+                    queue.offer(new Pair(poll.times + 1, temp));
+                    visited[temp] = true;
                 }
             }
         }
-        throw new IllegalArgumentException("参数错误");
+        return -1;
     }
-
-    @Test
-    public void test(){
-        System.out.println(numSquares(12));
-    }
-
 }
