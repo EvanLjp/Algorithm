@@ -1,7 +1,9 @@
 package com.evan.thread;
 
+import java.util.Timer;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @author :evan
@@ -30,7 +32,7 @@ public class App {
 
     public static void main(String[] args) throws InterruptedException {
         //join方法,让主线程等待子线程执行完毕继续执行
-        /*thread1.start();
+       /* thread1.start();
         thread1.join();
         thread2.start();
         thread2.join();
@@ -40,5 +42,6 @@ public class App {
         executorService.submit(thread2);
         executorService.submit(thread3);
         executorService.shutdown();
+        Timer timer=new Timer();
     }
 }
