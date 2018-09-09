@@ -23,6 +23,9 @@ public class Q4 {
     private static boolean getRes(int[] arr, int index) {
         int flag = 128;
         int count = 0;
+        if (arr[index] == 255) {
+            return false;
+        }
         while ((arr[index] & flag) >= flag) {
             flag = flag >> 1;
             count++;
