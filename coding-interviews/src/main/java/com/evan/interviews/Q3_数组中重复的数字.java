@@ -6,7 +6,7 @@ import org.junit.Test;
  * Created by asus on 2018/4/2.
  */
 public class Q3_数组中重复的数字 {
-    public boolean duplicate(int numbers[], int length, int[] duplication) {
+    public boolean duplicate(int[] numbers, int length, int[] duplication) {
         for (int i = 0; i < length; ) {
             if (numbers[i] == i) {
                 i++;

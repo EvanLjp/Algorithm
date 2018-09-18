@@ -2,6 +2,7 @@ package com.evan.interviews;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 
 /**
  * Created by 荣德水 on 2018/5/13.
@@ -9,20 +10,19 @@ import java.util.LinkedList;
 public class Q59_滑动窗口的最大值 {
 
     public ArrayList<Integer> maxInWindows(int [] num, int size) {
-        ArrayList<Integer> res=new ArrayList<>();
-        if (num==null||num.length==0||size<=0||num.length<size)
-            return res;
-        LinkedList<Integer> linkedList=new LinkedList<>();
-        for (int i = 0; i <num.length ; i++) {
-            while (!linkedList.isEmpty()&&num[linkedList.peekLast()]<num[i])
-                linkedList.pollLast();
-            linkedList.addLast(i);
-            if(linkedList.peekFirst()==i-size)
-                linkedList.pollFirst();
-            if (i>=size-1)
-                res.add(num[linkedList.peekFirst()]);
+        ArrayList<Integer> ret = new ArrayList<>();
+        if (size > num.length || size < 1)
+            return ret;
+        PriorityQueue<Integer> heap = new PriorityQueue<>((o1, o2) -> o2 - o1);  /* 大顶堆 */
+        for (int i = 0; i < size; i++)
+            heap.add(num[i]);
+        ret.add(heap.peek());
+        for (int i = 1, j = i + size - 1; j < num.length; i++, j++) {            /* 维护一个大小为 size 的大顶堆 */
+            heap.remove(num[i - 1]);
+            heap.add(num[j]);
+            ret.add(heap.peek());
         }
-        return res;
+        return ret;
     }
 
 }
