@@ -10,10 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>leetcode-learning</module>
-        <module>coding-interviews</module>
-        <module>heu-learning</module>
-        <module>interviews</module>
-        <module>design-pattern</module>
     </modules>
     <dependencies>
         <dependency>
