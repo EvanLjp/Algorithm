@@ -1,9 +1,14 @@
 package com.leetcode;
 
+import com.leetcode.annotations.thinking.DoublePointer;
+import com.leetcode.annotations.category.Array;
+
 /**
  * @author : Evan.Liu
  * @date : 2020/6/27 13:16
  */
+@Array
+@DoublePointer
 public class Q283_Move_Zeroes {
 
     /**

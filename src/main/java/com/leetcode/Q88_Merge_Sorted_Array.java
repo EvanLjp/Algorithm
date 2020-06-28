@@ -1,11 +1,15 @@
 package com.leetcode;
 
+import com.leetcode.annotations.category.Array;
+import com.leetcode.annotations.thinking.ReverseThinking;
 import org.junit.Test;
 
 /**
  * @author : Evan.Liu
  * @date : 2020/6/27 14:21
  */
+@Array
+@ReverseThinking
 public class Q88_Merge_Sorted_Array {
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {

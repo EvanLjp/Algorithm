@@ -1,11 +1,17 @@
 package com.leetcode;
 
+import com.leetcode.annotations.category.Array;
+import com.leetcode.annotations.thinking.CollisionPointer;
+import com.leetcode.annotations.thinking.QuickSort;
 import org.junit.Test;
 
 /**
  * @author : Evan.Liu
  * @date : 2020/6/27 14:46
  */
+@Array
+@QuickSort
+@CollisionPointer
 public class Q215_Kth_Largest_Element_in_an_Array {
 
     public int findKthLargest(int[] nums, int k) {
