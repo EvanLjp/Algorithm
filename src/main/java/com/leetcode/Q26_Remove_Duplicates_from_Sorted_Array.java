@@ -14,19 +14,12 @@ public class Q26_Remove_Duplicates_from_Sorted_Array {
 
     public int removeDuplicates(int[] nums) {
         int k = 1;
-
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] != nums[k - 1]) {
-                swap(nums, k++, i);
+                nums[k++]=nums[i];
             }
         }
         return k;
-    }
-
-    private void swap(final int[] nums, final int l, final int i) {
-        int temp = nums[l];
-        nums[l] = nums[i];
-        nums[i] = temp;
     }
 
     @Test

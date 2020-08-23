@@ -18,6 +18,6 @@ public class Q80_Remove_Duplicates_from_Sorted_Array_II {
                 nums[k++] = nums[i];
             }
         }
-        return Math.min(k, nums.length);
+        return k;
     }
 }

@@ -15,9 +15,7 @@ public class Q283_Move_Zeroes {
      * 时间O(n) 空间O(n)
      */
     public void moveZeroes_1(int[] nums) {
-
         int[] copy = new int[nums.length];
-
         for (int i = 0, j = 0; i < nums.length; i++) {
             if (nums[i] == 0) {
                 continue;

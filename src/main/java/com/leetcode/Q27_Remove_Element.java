@@ -12,18 +12,11 @@ import com.leetcode.annotations.thinking.DoublePointer;
 public class Q27_Remove_Element {
     public int removeElement(int[] nums, int val) {
         int k = 0;
-
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != val) {
-                swap(nums, k++, i);
+                nums[k++] = nums[i];
             }
         }
-        return k ;
-    }
-
-    private void swap(final int[] nums, final int l, final int i) {
-        int temp = nums[l];
-        nums[l] = nums[i];
-        nums[i] = temp;
+        return k;
     }
 }
